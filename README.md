@@ -1,17 +1,4 @@
 # Rinse And Repeat
-
-## Table of Contents
-
-1. [Overview](#Overview)
-2. [Description](#Description)
-3. [Tech Stack](#TechStack)
-4. [Features](#Features)
-
-## Overview
--> TODO: Provide Demo Link
-
-
-
 ### Description
 
 Confused on how to wash your clothes? Don't want to ruin your favorite sweater? RinseAndRepeat is an AI-powered garment care assistant.
