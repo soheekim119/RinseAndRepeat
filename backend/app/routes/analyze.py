@@ -1,7 +1,9 @@
 from fastapi import APIRouter, UploadFile, File, HTTPException
 from app.services.claude import analyze_image
 from app.models.care_result import CareResult
+import logging
 
+logger = logging.getLogger(__name__)
 router = APIRouter()
 
 ALLOWED_TYPES = {"image/jpeg", "image/png", "image/webp", "image/heic", "image/heif"}
@@ -20,6 +22,5 @@ async def analyze(file: UploadFile = File(...)):
         result = await analyze_image(image_bytes, media_type=file.content_type)
         return CareResult(**result)
     except Exception as e:
-        import traceback
-        print("FULL ERROR:", traceback.format_exc())
+        logger.error(f"Analysis failed: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
