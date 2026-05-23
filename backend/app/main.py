@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 load_dotenv
 
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware # Cross-Origin Resource Sharing for frontend and backend communication
 from app.routes.analyze import router as analyze_router
 
 app = FastAPI(title="RinseAndRepeat API")

@@ -1,6 +1,7 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
 .venv/
 *.egg-info/
 
@@ -8,8 +9,14 @@ __pycache__/
 .env
 *.env
 
+# Frontend
+node_modules/
+dist/
+.env.local
+
 # OS
 .DS_Store
 
-# Docker
+# Logs
 *.log
+.vscode/
