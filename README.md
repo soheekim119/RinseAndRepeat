@@ -1,6 +1,10 @@
 # Rinse And Repeat
 Point your camera at any clothing tag and get instant care instructions!
 
+## Currently:
+![When you enter the website](screenshot/Part_1.png)
+![After you upload a care label image](screenshot/Part_2.png)
+
 ## What It Does
 Upload any clothing care label and RinseAndRepeat will return structured care instructions of the wash temperature, dryer safety, bleach rules, iron settings, material type, and more. 
 Supports HEIC, JPEG, PNG, and WebP formats.
