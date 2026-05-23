@@ -9,7 +9,7 @@ Point your camera at any clothing tag and get instant care instructions!
 Upload any clothing care label and RinseAndRepeat will return structured care instructions of the wash temperature, dryer safety, bleach rules, iron settings, material type, and more. 
 Supports HEIC, JPEG, PNG, and WebP formats.
 
-**Frontend and deloyment in progress.**
+**Deloyment in progress.**
 
 ## Tech Stack
 | Layer | Technology |
@@ -18,7 +18,7 @@ Supports HEIC, JPEG, PNG, and WebP formats.
 | AI | Claude Sonnet Vision API |
 | Image Processing | Pillow + pillow-heif |
 | Deployment | Docker + GCP/AWS Cloud Run (coming soon) |
-| Frontend | React + TypeScript (coming soon) |
+| Frontend | React + TypeScript |
 
 ## API Example Response
 `POST /api/analyze`:
@@ -38,7 +38,7 @@ Supports HEIC, JPEG, PNG, and WebP formats.
 
 ## Local Setup
 ### Prerequisites
-- Python 3.11+
+- Python 3.13
 - Anthropic API key
 
   ```bash
@@ -46,10 +46,13 @@ Supports HEIC, JPEG, PNG, and WebP formats.
   [git clone ...](https://github.com/soheekim119/RinseAndRepeat.git)
   cd RinseAndRepeat
 
-  # Set up virtual environment
+  # Set up virtual environment for backend
   cd backend
   python3 -m venv .venv
   source .venv/bin/activate
+
+  # Set up frontend in another terminal
+  cd frontend
 
   # Install dependencies
   pip install -r requirements.txt
@@ -62,9 +65,10 @@ Supports HEIC, JPEG, PNG, and WebP formats.
   ### Run
   ```bash
   uvicorn app.main:app --reload
+  npm run dev
   ```
 
-  Visit `http://localhost:8000/docs` to test the POST API. GET API is for health check.
+  Visit your localhost to test the website!
 
   
 
