@@ -11,4 +11,3 @@ class CareResult(BaseModel):
     material: Optional[str] = None
     confidence: Optional[str] = None
     raw_summary: str
-

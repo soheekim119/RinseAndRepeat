@@ -1,7 +1,7 @@
 import axios from "axios"
 import type { CareResult } from "../types/CareResult";
 
-const API_URL = "http://localhost:8000";
+const API_URL = "";
 
 export async function analyzeImage(file: File): Promise<CareResult> {
     const formData = new FormData(); // sending file over HTTP
