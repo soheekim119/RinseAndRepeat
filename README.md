@@ -64,12 +64,9 @@ Supports HEIC, JPEG, PNG, and WebP formats.
 
   ### Run
   ```bash
-  uvicorn app.main:app --reload
-  npm run dev
+  docker compose up --build
+  Visit http://localhost
   ```
-
-  Visit your localhost to test the website!
-
   
 
 
